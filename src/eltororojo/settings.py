@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'eltororojo.wsgi.application'
 database_name = os.getenv("DATABASE_NAME", "test")
 database_user = os.getenv("DATABASE_USER", "postgres")
 database_host = os.getenv("DATABASE_HOST", "development.c1weljjn5eef.us-west-2.rds.amazonaws.com")
-database_password = os.getenv("DATABASE_PASSWORD", "elToroRojo1")
+database_password = os.getenv("DATABASE_PASSWORD", "")
 
 DATABASES = {
     'default': {
@@ -129,8 +129,8 @@ USE_TZ = True
 # STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-AWS_ACCESS_KEY_ID = os.getenv('STATIC_ACCESS_KEY_ID', 'AKIAY4RQVADBI74XHN7Q')
-AWS_SECRET_ACCESS_KEY = os.getenv('STATIC_SECRET_KEY', '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')
+AWS_ACCESS_KEY_ID = os.getenv('STATIC_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.getenv('STATIC_SECRET_KEY')
 
 os.environ['AWS_ACCESS_KEY_ID'] = AWS_ACCESS_KEY_ID
 os.environ['AWS_SECRET_ACCESS_KEY'] = AWS_SECRET_ACCESS_KEY
